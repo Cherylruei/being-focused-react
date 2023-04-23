@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  margin: 3em 4em 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 48em) / 4);
+  height: 16em;
+  border: 0.5em solid var(--color-theme);
+  border-radius: 5%;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(11, 167, 9) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(245, 204, 57) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+  margin-right: -2em;
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+  margin-left: -2em;
+}
+
+.card > * {
+  transform: scale(6); /* 调整此值以更改缩放级别 */
+}

@@ -12,7 +12,7 @@ const Controller = () => {
         <div className={styles.icon}>
           <IconStop />
         </div>
-        <div className={styles.icon}>
+        <div className={styles.iconRepeat}>
           <IconRepeat />
         </div>
       </div>
