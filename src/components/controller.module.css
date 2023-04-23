@@ -1,0 +1,31 @@
+.controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.iconPlay {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 12.5em;
+  height: 12.5em;
+  padding: 3em;
+  fill: var(--color-theme);
+  border: 1em solid var(--color-theme);
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  fill: var(--color-theme);
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+}
