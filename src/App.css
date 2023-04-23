@@ -78,13 +78,21 @@ video {
 /* CSS common */
 :root {
   /* colors */
-  --color-theme: #00477D;
-
+  --color-theme: #00477d;
+  --color-secondary: rgb(180, 245, 255);
+  --color-white: #ffffff;
 }
 
-
+html,
 body {
   min-height: 100vh;
-  background-color: #faf8f6;
+  background: linear-gradient(45deg, #55f055, #4cccf7);
 }
 
+.menuDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}

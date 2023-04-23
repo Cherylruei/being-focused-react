@@ -1,13 +1,17 @@
 import './App.css';
-import Menu from './components/Menu';
+// import ModeMenu from './components/menu/ModeMenu';
+// import MusicMenu from './components/menu/MusicMenu';
 import PlaySection from './components/PlaySection';
+import TimeMenu from './components/menu/TimeMenu';
 
 function App() {
   return (
     <div>
-      <Menu />
-      <Menu />
-      <Menu />
+      <div className='menuDiv'>
+        <TimeMenu mode='controller' />
+        <TimeMenu music='controller' />
+        <TimeMenu time='controller' />
+      </div>
       <PlaySection />
     </div>
   );

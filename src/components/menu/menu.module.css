@@ -1,0 +1,54 @@
+.menu {
+  position: relative;
+  width: 16em;
+  height: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .center {
+  position: relative;
+  background: var(--color-white);
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+  fill: var(--color-theme);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transition: 1.25s;
+  z-index: 1000;
+}
+
+.menu.active .center {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
+}
+
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transform: rotate(calc(360deg / 8 * var(--i)));
+  transform-origin: 8em;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+
+.menu.active li {
+  scale: 1;
+}
+
+.menu li button {
+  position: relative;
+  background: var(--color-white);
+  width: 4em;
+  height: 4em;
+  font-size: 1em;
+  border-radius: 50%;
+  border: none;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}

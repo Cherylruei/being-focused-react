@@ -9,10 +9,10 @@ const Controller = () => {
         <IconPlay />
       </div>
       <div className={styles.icons}>
-        <div className={styles.icon}>
+        <div className={styles.iconStop}>
           <IconStop />
         </div>
-        <div className={styles.iconRepeat}>
+        <div className={styles.icon}>
           <IconRepeat />
         </div>
       </div>
